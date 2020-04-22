@@ -1,0 +1,93 @@
+Script started on 2019-10-09 10:14:47-06:00
+]0;vridhi.dubey1@csa3:~/355b/assign2/as2vridhi.dubey1@csa3:~/355b/assign2/as2$ gdb scriptb[K2[K[K[K[K[K[Ka[K[Kassign2b
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign2b...(no debugging symbols found)...done.
+(gdb) bm[K main
+Breakpoint 1 at 0x40061c
+(gdb) r
+Starting program: /home/ugb/vridhi.dubey1/355b/assign2/as2/assign2b 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, 0x000000000040061c in main ()
+(gdb) x/i $pc
+=> 0x40061c <main+8>:	mov	w20, #0x1f1f1f1f            	// #522133279
+(gdb) ni
+0x0000000000400620 in main ()
+(gdb) nix/i $pc
+=> 0x400620 <main+12>:	mov	w19, #0xc8                  	// #200
+(gdb) x/i $pcni[Kx/i $pc
+=> 0x400620 <main+12>:	mov	w19, #0xc8                  	// #200
+(gdb) x/i $pcni[K
+0x0000000000400624 in main ()
+(gdb) nix/i $pc
+=> 0x400624 <main+16>:	mov	w21, #0x0                   	// #0
+(gdb) x/i $pcni[K
+0x0000000000400628 in main ()
+(gdb) nix/i $pc
+=> 0x400628 <main+20>:	mov	w22, #0x0                   	// #0
+(gdb) x/i $pcni[K
+0x000000000040062c in main ()
+(gdb) nix/i $pc
+=> 0x40062c <main+24>:	adrp	x0, 0x400000
+(gdb) x/i $pcni[K
+0x0000000000400630 in main ()
+(gdb) nix/i $pc
+=> 0x400630 <main+28>:	add	x0, x0, #0x594
+(gdb) x/i $pcni[K
+0x0000000000400634 in main ()
+(gdb) nix/i $pc
+=> 0x400634 <main+32>:	mov	w1, w19
+(gdb) x/i $pcni[K
+0x0000000000400638 in main ()
+(gdb) nix/i $pc
+=> 0x400638 <main+36>:	mov	w2, w19
+(gdb) x/i $pcni[K
+0x000000000040063c in main ()
+(gdb) nix/i $pc
+=> 0x40063c <main+40>:	mov	w3, w20
+(gdb) x/i $pcni[K
+0x0000000000400640 in main ()
+(gdb) nix/i $pc
+=> 0x400640 <main+44>:	mov	w4, w20
+(gdb) x/i $pcni[K
+0x0000000000400644 in main ()
+(gdb) nix/i $pc
+=> 0x400644 <main+48>:	bl	0x400480 <printf@plt>
+(gdb) x/i $pcni[K
+multiplier = 0x000000c8 (200) multiplicand = 0x1f1f1f1f (522133279) 
+
+0x0000000000400648 in main ()
+(gdb) nix/i $pc
+=> 0x400648 <main+52>:	cmp	w19, #0x0
+(gdb) x/i $pcni[K
+0x000000000040064c in main ()
+(gdb) nix/i $pc
+=> 0x40064c <main+56>:	b.ge	0x400654 <first>  // b.tcont
+(gdb) x/i $pcni[K
+product = 0x00000018  multiplier = 0x50505038
+64-bit result = 0x0000001850505038 (104426655800)
+[Inferior 1 (process 16846) exited normally]
+(gdb) nix/i $pc[K[K[K[K[K[K[Kex[K[Kq
+]0;vridhi.dubey1@csa3:~/355b/assign2/as2vridhi.dubey1@csa3:~/355b/assign2/as2$ exit
+exit
+
+Script done on 2019-10-09 10:16:06-06:00
