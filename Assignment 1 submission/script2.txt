@@ -1,0 +1,58 @@
+Script started on 2019-09-27 14:58:44-06:00
+]0;vridhi.dubey1@csa2:~/355b/assign1vridhi.dubey1@csa2:~/355b/assign1$ gcc assign1b.s -o assignq1[K[K1b
+]0;vridhi.dubey1@csa2:~/355b/assign1vridhi.dubey1@csa2:~/355b/assign1$ gdb assign1nb[K[Kb
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1b...(no debugging symbols found)...done.
+(gdb) b done
+Breakpoint 1 at 0x400668
+(gdb) r
+Starting program: /home/ugb/vridhi.dubey1/355b/assign1/assign1b 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+ || For X =  -10	|| Y = -253	|| The current maximum of Y = -253	|| 
+ || For X =  -9	|| Y = -366	|| The current maximum of Y = -253	|| 
+ || For X =  -8	|| Y = -415	|| The current maximum of Y = -253	|| 
+ || For X =  -7	|| Y = -412	|| The current maximum of Y = -253	|| 
+ || For X =  -6	|| Y = -369	|| The current maximum of Y = -253	|| 
+ || For X =  -5	|| Y = -298	|| The current maximum of Y = -253	|| 
+ || For X =  -4	|| Y = -211	|| The current maximum of Y = -211	|| 
+ || For X =  -3	|| Y = -120	|| The current maximum of Y = -120	|| 
+ || For X =  -2	|| Y = -37	|| The current maximum of Y = -37	|| 
+ || For X =  -1	|| Y = 26	|| The current maximum of Y = 26	|| 
+ || For X =  0	|| Y = 57	|| The current maximum of Y = 57	|| 
+ || For X =  1	|| Y = 44	|| The current maximum of Y = 57	|| 
+ || For X =  2	|| Y = -25	|| The current maximum of Y = 57	|| 
+ || For X =  3	|| Y = -162	|| The current maximum of Y = 57	|| 
+ || For X =  4	|| Y = -379	|| The current maximum of Y = 57	|| 
+
+Breakpoint 1, 0x0000000000400668 in done ()
+(gdb) p $x21
+$1 = 57
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 20987] will be killed.
+
+Quit anyway? (y or n) y
+]0;vridhi.dubey1@csa2:~/355b/assign1vridhi.dubey1@csa2:~/355b/assign1$ exit
+exit
+
+Script done on 2019-09-27 15:03:21-06:00

@@ -1,0 +1,180 @@
+Script started on 2019-09-25 10:19:42-06:00
+]0;vridhi.dubey1@csa3:~/355b/assign1vridhi.dubey1@csa3:~/355b/assign1$ exitgdb assign1a[14@cc assign1a.s -o[C[C[C[C[C[C[C[C[C[7Pscript script1b.txtgcc assign1a.s -o assign1a
+]0;vridhi.dubey1@csa3:~/355b/assign1vridhi.dubey1@csa3:~/355b/assign1$ gcc assign1a.s -o assign1aexit[Kgdb assign1a[14@cc assign1a.s -o[C[C[C[C[C[C[C[C[C[14Pdb[C[C[C[C[C[C[C[C[C
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1a...(no debugging symbols found)...done.
+(gdb) b main
+Breakpoint 1 at 0x4005dc
+(gdb) r
+Starting program: /home/ugb/vridhi.dubey1/355b/assign1/assign1a 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, 0x00000000004005dc in main ()
+(gdb) \[Kx\i $pc[1P[1@/
+=> 0x4005dc <main+8>:	mov	x19, #0xfffffffffffffff6    	// #-10
+(gdb) ni
+0x00000000004005e0 in main ()
+(gdb) nix/i $pc
+=> 0x4005e0 <main+12>:	mov	x20, #0x0                   	// #0
+(gdb) x/i $pcni[K
+0x00000000004005e4 in main ()
+(gdb) nix/i $pc
+=> 0x4005e4 <main+16>:	mov	x21, #0x0                   	// #0
+(gdb) x/i $pcni[K
+0x00000000004005e8 in main ()
+(gdb) nix/i $pc
+=> 0x4005e8 <main+20>:	mov	x28, #0x0                   	// #0
+(gdb) x/i $pcni[K
+0x00000000004005ec in test ()
+(gdb) nix/i $pc
+=> 0x4005ec <test>:	cmp	x19, #0x4
+(gdb) x/i $pcni[K
+0x00000000004005f0 in test ()
+(gdb) nix/i $pc
+=> 0x4005f0 <test+4>:	b.gt	0x400668 <done>
+(gdb) x/i $pcni[K
+0x00000000004005f4 in test ()
+(gdb) nix/i $pc
+=> 0x4005f4 <test+8>:	mov	x20, #0x0                   	// #0
+(gdb) x/i $pcni[K
+0x00000000004005f8 in test ()
+(gdb) nix/i $pc
+=> 0x4005f8 <test+12>:	add	x20, x20, #0x39
+(gdb) x/i $pcni[K
+0x00000000004005fc in test ()
+(gdb) nix/i $pc
+=> 0x4005fc <test+16>:	mov	x22, #0xb                   	// #11
+(gdb) x/i $pcni[K
+0x0000000000400600 in test ()
+(gdb) nix/i $pc
+=> 0x400600 <test+20>:	mul	x22, x22, x19
+(gdb) x/i $pcni[K
+0x0000000000400604 in test ()
+(gdb) nix/i $pc
+=> 0x400604 <test+24>:	add	x20, x20, x22
+(gdb) x/i $pcni[K
+0x0000000000400608 in test ()
+(gdb) nix/i $pc
+=> 0x400608 <test+28>:	mov	x22, #0xffffffffffffffea    	// #-22
+(gdb) x/i $pcni[K
+0x000000000040060c in test ()
+(gdb) nix/i $pc
+=> 0x40060c <test+32>:	mul	x22, x22, x19
+(gdb) x/i $pcni[K
+0x0000000000400610 in test ()
+(gdb) nix/i $pc
+=> 0x400610 <test+36>:	mul	x22, x22, x19
+(gdb) x/i $pcni[K
+0x0000000000400614 in test ()
+(gdb) nix/i $pc
+=> 0x400614 <test+40>:	add	x20, x20, x22
+(gdb) x/i $pcni[K
+0x0000000000400618 in test ()
+(gdb) nix/i $pc
+=> 0x400618 <test+44>:	mov	x22, #0xfffffffffffffffe    	// #-2
+(gdb) x/i $pcni[K
+0x000000000040061c in test ()
+(gdb) nix/i $pc
+=> 0x40061c <test+48>:	mul	x22, x22, x19
+(gdb) x/i $pcni[K
+0x0000000000400620 in test ()
+(gdb) nix/i $pc
+=> 0x400620 <test+52>:	mul	x22, x22, x19
+(gdb) x/i $pcni[K
+0x0000000000400624 in test ()
+(gdb) nix/i $pc
+=> 0x400624 <test+56>:	mul	x22, x22, x19
+(gdb) x/i $pcni[K
+0x0000000000400628 in test ()
+(gdb) nix/i $pc
+=> 0x400628 <test+60>:	add	x20, x20, x22
+(gdb) x/i $pcni[K
+0x000000000040062c in test ()
+(gdb) nix/i $pc
+=> 0x40062c <test+64>:	cmp	x28, #0x0
+(gdb) x/i $pcni[K
+0x0000000000400630 in test ()
+(gdb) nix/i $pc
+=> 0x400630 <test+68>:	b.eq	0x400660 <up_Y>  // b.none
+(gdb) x/i $pcni[K
+0x0000000000400660 in up_Y ()
+(gdb) nix/i $pc
+=> 0x400660 <up_Y>:	mov	x21, x20
+(gdb) x/i $pcni[K
+0x0000000000400664 in up_Y ()
+(gdb) nix/i $pc
+=> 0x400664 <up_Y+4>:	b	0x40063c <l_end>
+(gdb) x/i $pcni[K
+0x000000000040063c in l_end ()
+(gdb) nix/i $pc
+=> 0x40063c <l_end>:	adrp	x0, 0x400000
+(gdb) x/i $pcni[K
+0x0000000000400640 in l_end ()
+(gdb) nix/i $pc
+=> 0x400640 <l_end+4>:	add	x0, x0, #0x594
+(gdb) x/i $pcni[K
+0x0000000000400644 in l_end ()
+(gdb) nix/i $pc
+=> 0x400644 <l_end+8>:	mov	x1, x19
+(gdb) x/i $pcni[K
+0x0000000000400648 in l_end ()
+(gdb) nix/i $pc
+=> 0x400648 <l_end+12>:	mov	x2, x20
+(gdb) x/i $pcni[K
+0x000000000040064c in l_end ()
+(gdb) nix/i $pc
+=> 0x40064c <l_end+16>:	mov	x3, x21
+(gdb) x/i $pcni[K
+0x0000000000400650 in l_end ()
+(gdb) nix/i $pc
+=> 0x400650 <l_end+20>:	bl	0x400480 <printf@plt>
+(gdb) x/i $pcni[K
+ || For X = -10	|| Y = -253	|| The current maximum of Y = -253.	|| 
+0x0000000000400654 in l_end ()
+(gdb) ni[K[Kp $x19
+$1 = -10
+(gdb) p $x19[4Pnip $x19[K[K20
+$2 = -253
+(gdb) p $x20[K1
+$3 = -253
+(gdb) c
+Continuing.
+ || For X = -9	|| Y = -366	|| The current maximum of Y = -253.	|| 
+ || For X = -8	|| Y = -415	|| The current maximum of Y = -253.	|| 
+ || For X = -7	|| Y = -412	|| The current maximum of Y = -253.	|| 
+ || For X = -6	|| Y = -369	|| The current maximum of Y = -253.	|| 
+ || For X = -5	|| Y = -298	|| The current maximum of Y = -253.	|| 
+ || For X = -4	|| Y = -211	|| The current maximum of Y = -211.	|| 
+ || For X = -3	|| Y = -120	|| The current maximum of Y = -120.	|| 
+ || For X = -2	|| Y = -37	|| The current maximum of Y = -37.	|| 
+ || For X = -1	|| Y = 26	|| The current maximum of Y = 26.	|| 
+ || For X = 0	|| Y = 57	|| The current maximum of Y = 57.	|| 
+ || For X = 1	|| Y = 44	|| The current maximum of Y = 57.	|| 
+ || For X = 2	|| Y = -25	|| The current maximum of Y = 57.	|| 
+ || For X = 3	|| Y = -162	|| The current maximum of Y = 57.	|| 
+ || For X = 4	|| Y = -379	|| The current maximum of Y = 57.	|| 
+[Inferior 1 (process 17241) exited normally]
+(gdb) q
+]0;vridhi.dubey1@csa3:~/355b/assign1vridhi.dubey1@csa3:~/355b/assign1$ exit
+exit
+
+Script done on 2019-09-25 10:21:40-06:00
