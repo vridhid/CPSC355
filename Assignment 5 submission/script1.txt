@@ -1,0 +1,17 @@
+Script started on 2019-12-02 15:49:21-07:00
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ ./a5aMaingcc a5aMain.o -o a5aMain[5Pas a5a.asm -o a5a.o[3Pgcc a5aMain.c -cls[Kcd a5a[4Plsgcc a5aMain.c -cas a5a.asm -o a5a.o[3Pgcc a5aMain.c -c
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ gcc a5aMain.c -c[7P./a5aMaingcc a5aMain.o -o a5aMain[5Pas a5a.asm -o a5a.o[3Pgcc a5aMain.c -cls[Kcd a5a[4Plscd assign5ls[Kcd 355b./a5aMain 2 3 * =ls[Kcd a5a[4PlsLScd ..[3Plscd ..[3PLSlscd a5a[4Pls./a5aMain 2 3 * =[10Pcd 355bls[Kcd assign5ls[Kcd a5a[4Plsgcc a5aMain.c -cas a5a.asm -o a5a.ogcc a5aMain.o -o a5aMain[15P./a5aMaingcc a5aMain.c -c[Km4 a5a.asm > a5a.s
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ gcc a5aMain.o[K[K[K[K[K[K[K[K[K[K[K[K[Kas a5a.s -o a5a.o
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ gcc a5aMain.o a5a.p[Ko -o a5aMain
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ ./a5aMain
+2 3 + =
+Segmentation fault (core dumped)
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ 1 [K[K./a5aMain
+1 * 1   1 * =
+Segmentation fault (core dumped)
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ e[Kqe[Kuit
+bash: quit: command not found
+]0;vridhi.dubey1@csa2:~/355b/assign5/a5avridhi.dubey1@csa2:~/355b/assign5/a5a$ exit
+exit
+
+Script done on 2019-12-02 15:50:45-07:00
