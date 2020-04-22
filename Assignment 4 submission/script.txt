@@ -1,0 +1,79 @@
+Script started on 2019-11-08 12:33:59-07:00
+gdb]0;vridhi.dubey1@csa3:~/355b/assign4vridhi.dubey1@csa3:~/355b/assign4$ gdb[K[K[Klogoutemacs assign4.asm[6Pgdb assign4
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign4...done.
+(gdb) [K(gdb) b 221
+Breakpoint 1 at 0x4007b4: file assign4.s, line 221.
+(gdb) b 227
+Breakpoint 2 at 0x4007c0: file assign4.s, line 227.
+(gdb) bb[K 253
+Breakpoint 3 at 0x40080c: file assign4.s, line 253.
+(gdb) b 268
+Breakpoint 4 at 0x40082c: file assign4.s, line 268.
+(gdb) r
+Starting program: /home/ugb/vridhi.dubey1/355b/assign4/assign4 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, main () at assign4.s:222
+222		adrp x0, spt									// set print function
+(gdb) x/5d $fp+12+4
+0xfffffffff180:	0	0	2	2
+0xfffffffff190:	3
+(gdb) c
+Continuing.
+Initial cuboid values:
+
+Breakpoint 2, main () at assign4.s:227
+227		add x0, x29, first_s								// add x29 and first_s and store in x0
+(gdb) cx/5d $fp+12+4[C[1P2+432+4
+0xfffffffff194:	0	0	2	2
+0xfffffffff1a4:	3
+(gdb) c
+Continuing.
+Cuboid first origin = (0, 0) Base width = 2 Base length = 2 Height = 3 Volume = 0
+Cuboid second origin = (0, 0) Base width = 2 Base length = 2 Height = 3 Volume = 12
+
+Breakpoint 3, else () at assign4.s:255
+255		add x0, x0, :lo12:tpt								// initilize the statement
+(gdb) cx/5d $fp+32+4[1P2+412+4
+0xfffffffff180:	3	-6	2	2
+0xfffffffff190:	3
+(gdb) c
+Continuing.
+
+Changed cuboid values:
+Cuboid first origin = (3, -6) Base width = 2 Base length = 2 Height = 3 Volume = 0
+Cuboid second origin = (0, 0) Base width = 8 Base length = 8 Height = 12 Volume = 768
+
+Breakpoint 4, else () at assign4.s:268
+268		mov w0, 0									// mov w0,0
+(gdb) cx/5d $fp+12+4[1P2+432+4
+0xfffffffff194:	0	0	8	8
+0xfffffffff1a4:	12
+(gdb) c
+Continuing.
+[Inferior 1 (process 9872) exited normally]
+(gdb) quit
+]0;vridhi.dubey1@csa3:~/355b/assign4vridhi.dubey1@csa3:~/355b/assign4$ exit
+exit
+
+Script done on 2019-11-08 12:36:30-07:00
